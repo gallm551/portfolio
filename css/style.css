@@ -1,0 +1,348 @@
+:root {
+    --cosmic: #FFF8E7;
+    --shampoo: #F7C9F1;
+    --purple: #C77FB6;
+    --pistachio: #9AD47C;
+    --ruby: #A83568;
+    --green: #315340;
+    --poppin: 'Poppins', sans-serif;
+    --anon: 'Anonymous Pro', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 2.5%;
+    margin-top: 2.5%;
+    background-color: var(--cosmic);
+    height: auto;
+    /*
+    background: url("../images/IMG_Bee.JPG") left top no-repeat;
+    background-size: contain;
+    background-color: aquamarine;
+    font-family: var(--poppin);
+    */
+}
+
+.candywrapper {
+  z-index: 1;
+  top: 0;
+  margin-bottom: 5em;
+  border-bottom: var(--green) 4px solid;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: var(--cosmic);
+  position: sticky;
+  display: grid;
+  grid-template-columns: 25% 70%;
+  grid-column-gap: 5%;
+}
+
+.milk {
+  font-family: var(--poppin);
+  font-size: 2.5em;
+  font-weight: bold;
+  line-height: 1em;
+  color: var(--green);
+  transition: all 2s ease-in-out;
+}
+
+.milk:hover {
+  transform: rotateX(180deg);
+  color: var(--pistachio);
+}
+
+.chocolate {
+  display: grid;
+  grid-template-columns: 10% 8% 12%;
+  grid-column-gap: 5%;
+  justify-items: start;
+  align-items: end;
+  justify-content: end;
+  align-content: end;
+}
+
+.peanut {
+  font-family: var(--poppin);
+  font-size: 1.5em;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+  color: var(--green);
+  transition: all .75s ease-out;
+}
+
+.peanut:hover {
+  color: var(--purple);
+  transform: translateY(-15px);
+}
+
+.beans {
+  display: inline-block;
+  position: fixed;
+  top: 35%;
+  left: 8%;
+  width: 25vw;
+  height: auto;
+  padding: 2%;
+  text-align: justify;
+  letter-spacing: 0.25px;
+  word-spacing: 1px;
+  line-height: 1.25em;
+  font-size: 1.5em;
+  font-family: var(--anon);
+  color: var(--cosmic);
+  background-color: var(--purple);
+  transition: all 1s ease;
+  animation: LoadOn 1.5s ease-in-out;
+}
+
+.beans:hover {
+  transform: translateX(20px);
+  color: var(--purple);
+  background-color: var(--cosmic);
+}
+
+img.water {
+  z-index: -1;
+  display: inline;
+  position: fixed;
+  left: 32%;
+  width: 60vw;
+  height: auto;
+  background-color: var(--shampoo);
+  font-family: var(--poppin);
+  animation: SlideIn 1.5s ease-in-out;
+}
+
+.spicerack {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto auto;
+  row-gap: 5em;
+}
+
+.jar {
+  padding-left: 0%;
+  display: grid;
+  grid-template-columns: 22% 74%;
+  grid-template-rows: auto;
+  column-gap: 4%;
+}
+
+.cap {
+  border-top: var(--green) 8px dotted;
+  padding-top: 5%;
+  font-size: 1.5em;
+  font-family: var(--anon);
+  color: var(--ruby);
+  text-align: right;
+}
+
+.label {
+  display: grid;
+  place-content: start space-between;
+  row-gap: 2.5em;
+}
+
+.thyme{
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 30vh;
+}
+
+.ginger{
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 30vh;
+}
+
+.rosemary{
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: auto;
+  place-content: center space-between;
+}
+
+.tumeric{
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 30vh 30vh;
+}
+
+.cinnamon {
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 30vh;
+} 
+
+.pepper {
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 30vh;
+}
+
+.spice {
+  overflow: hidden;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+}
+
+.spicey {
+  overflow: visible;
+  width: auto;
+  height: auto;
+}
+
+img.square, img.rectangle {
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+  filter: blur(0.75px);
+  -webkit-filter: blur(0.75px);
+  transition: all .75s ease;
+  animation: LoadOn 1.5s ease-in-out;
+}
+
+img.rectangle {
+  width: auto;
+  height: 100%;
+  animation: LoadOn 1.5s ease-in-out;
+}
+
+img.square:hover, img.rectangle:hover {
+  overflow: hidden;
+  opacity: 1;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  transform: scale(1.15);
+}
+
+video {
+  animation: LoadOn 1.5s ease-in-out;
+}
+
+img.aboutpic {
+  z-index: -1;
+  display: inline-block;
+  position: fixed;
+  top: 20%;
+  left: 32%;
+  width: 60vw;
+  height: auto;
+  background-color: var(--shampoo);
+  font-family: var(--poppin);
+  animation: SlideIn 1.5s ease-in-out;
+}
+
+.contactinfo {
+  display: inline-block;
+  position: fixed;
+  top: 30%;
+  left: 10%;
+  width: 25%;
+  height: auto;
+  font-size: 1.5em;
+  font-family: var(--anon);
+  background-color: var(--purple);
+  transition: all 1s ease;
+  animation: LoadOn 1.5s ease-in-out;
+}
+
+.linkto {
+  display: block;
+  margin: 3%;
+  padding: 3%;
+  color: var(--cosmic);
+  text-decoration: none;
+  transition: all 1s ease;
+}
+
+.linkto:hover {
+  text-decoration: underline;
+  transform: translateX(10px);
+}
+
+a.linkto:visited {
+  font-weight: bold;
+  color: var(--shampoo);
+}
+
+@keyframes LoadOn {
+  0% {
+    transform: translateY(25%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes SlideIn {
+  0% {
+    transform: translateX(25%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+/* The Modal (background) */
+.modal {
+    /* display: none;  Hidden by default */
+    position: fixed; /* Stay in place */
+    /* z-index: 1;  Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    /* overflow: auto;  Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity .25s 0s, transform .25s;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close-button {
+    color: #aaa;
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: grey;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .close-button:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .show-modal {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1.0);
+      transition: visibility 0s linear 0s, opacity .25s 0s, transform .25s;
+  }
