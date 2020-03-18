@@ -285,7 +285,7 @@ color: var(--shampoo);
 /* 
 -
 Small devices (portrait tablets and large phones, 625px and up)*/
-@media only screen and (max-width: 625px) and (min-width: 320px) {
+@media only screen and (max-width: 767px) and (min-width: 320px) {
   .candywrapper {
     grid-template-columns: 5% 90%;
     grid-column-gap: 2%;
@@ -326,7 +326,7 @@ Small devices (portrait tablets and large phones, 625px and up)*/
 /* 
 -
 Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
+@media only screen and (max-width: 1025px) and (min-width: 768px) {
   .candywrapper {
     grid-template-columns: 5% 90%;
     grid-column-gap: 5%;
@@ -366,12 +366,46 @@ Medium devices (landscape tablets, 768px and up) */
 
 /* 
 -
-Large devices (laptops/desktops, 1025px and up) */
+Large devices (laptops/desktops, 1025px and up) 
 @media only screen and (max-width: 1399px) and (min-width: 1025px) {
-
 }
+*/
 
 /* Extra large devices (large laptops and desktops, 1400px and up) */
-@media only screen and (min-width: 1400px) {
-
+@media only screen and (min-width: 1500px) {
+  .candywrapper {
+    z-index: 1;
+    top: 0;
+    margin-bottom: 5em;
+    position: sticky;
+    display: grid;
+    grid-template-columns: 20% 75%;
+    grid-column-gap: 2%;
+    }
+    .milk {
+    font-size: 2.5em;
+    }
+    .chocolate {
+    grid-template-columns: 8% 6% 10%;
+    grid-column-gap: 5%;
+    }
+    .peanut {
+    font-size: 2em;
+    }
+    .beans {
+    display: inline-block;
+    position: fixed;
+    top: 35%;
+    left: 8%;
+    width: 25vw;
+    padding: 2%;
+    text-align: justify;
+    font-size: 1.5em;
+    }
+    img.water {
+    display: inline;
+    position: fixed;
+    left: 32%;
+    width: 60vw;
+    }
 }
