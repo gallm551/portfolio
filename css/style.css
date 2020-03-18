@@ -302,7 +302,7 @@ Small devices (portrait tablets and large phones, 625px and up)*/
   .peanut {
     font-size: 1em;
   }
-  img.water {
+  img.water, img.aboutpic {
     display: inline-block;
     position: relative;
     top: 0;
@@ -310,7 +310,7 @@ Small devices (portrait tablets and large phones, 625px and up)*/
     width: 90vw;
     height: auto;
   }
-  .beans {
+  .beans, .contactinfo {
     display: inline-block;
     position: relative;
     margin-top: 5vh;
@@ -320,6 +320,73 @@ Small devices (portrait tablets and large phones, 625px and up)*/
     text-align: justify;
     padding: 5vw;
     font-size: 1em;
+  }
+  .spicerack {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 125vh 125vh 125vh 175vh 125vh;  
+    row-gap: 3em;
+    }
+    
+  .jar {
+    padding-left: 0%;
+    display: grid;
+    grid-template-rows: 4% 92%;
+    grid-template-columns: 100%;
+    row-gap: 4%;
+  }
+  
+  .cap {
+    border-top: none;
+    border-bottom: var(--green) 4px dotted;
+    padding-top: 0;
+    padding-bottom: 5%;
+    font-size: 1.25em;
+    text-align: left;
+  }
+  
+  .label {
+    display: grid;
+    place-content: start start;
+    row-gap: 2%;
+  }
+
+  .thyme{
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 30% 30%;
+  }
+
+  .rosemary{
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 30% 30%;
+    place-content: space-between start;
+  }
+
+  .ginger{
+    grid-template-columns: 80%;
+    grid-template-rows: 30% 30% 30%;
+  }
+
+  .cinnamon {
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+  } 
+
+  .tumeric{
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 30% 30%;
+  }
+  
+  .pepper {
+    grid-template-columns: 90%;
+    grid-template-rows: 30% 30% 30%;
+  }
+
+  .spice {
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    background-color: transparent;
   }
 }
 
@@ -343,7 +410,7 @@ Medium devices (landscape tablets, 768px and up) */
   .peanut {
     font-size: 1.25em;
   }
-  img.water {
+  img.water,img.aboutpic {
     display: inline-block;
     position: relative;
     top: 0;
@@ -351,7 +418,7 @@ Medium devices (landscape tablets, 768px and up) */
     width: 90vw;
     height: auto;
   }
-  .beans {
+  .beans, .contactinfo {
     display: inline-block;
     position: relative;
     margin-top: 5vh;
@@ -374,25 +441,31 @@ Large devices (laptops/desktops, 1025px and up)
 /* Extra large devices (large laptops and desktops, 1400px and up) */
 @media only screen and (min-width: 1500px) {
   .candywrapper {
-    z-index: 1;
-    top: 0;
-    margin-bottom: 5em;
-    position: sticky;
-    display: grid;
-    grid-template-columns: 20% 75%;
-    grid-column-gap: 2%;
+      z-index: 1;
+      top: 0;
+      margin-bottom: 5em;
+      position: sticky;
+      display: grid;
+      grid-template-columns: 20% 75%;
+      grid-column-gap: 2%;
     }
-    .milk {
+  .milk {
     font-size: 2.5em;
-    }
-    .chocolate {
+  }
+  .chocolate {
     grid-template-columns: 8% 6% 10%;
     grid-column-gap: 5%;
-    }
-    .peanut {
+  }
+  .peanut {
     font-size: 2em;
-    }
-    .beans {
+  }
+  img.water, img.aboutpic {
+    display: inline;
+    position: fixed;
+    left: 32%;
+    width: 60vw;
+  }
+  .beans, .contactinfo {
     display: inline-block;
     position: fixed;
     top: 35%;
@@ -401,11 +474,5 @@ Large devices (laptops/desktops, 1025px and up)
     padding: 2%;
     text-align: justify;
     font-size: 1.5em;
-    }
-    img.water {
-    display: inline;
-    position: fixed;
-    left: 32%;
-    width: 60vw;
-    }
+  } 
 }
