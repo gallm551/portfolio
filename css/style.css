@@ -351,7 +351,7 @@ Small devices (portrait tablets and large phones, 625px and up)*/
     row-gap: 2%;
   }
 
-  .thyme{
+  .thyme, .tumeric{
     grid-template-columns: 100%;
     grid-template-rows: 30% 30% 30%;
   }
@@ -370,11 +370,6 @@ Small devices (portrait tablets and large phones, 625px and up)*/
   .cinnamon {
     grid-template-columns: 100%;
     grid-template-rows: 25% 25% 25% 25%;
-  } 
-
-  .tumeric{
-    grid-template-columns: 100%;
-    grid-template-rows: 30% 30% 30%;
   }
   
   .pepper {
@@ -428,6 +423,47 @@ Medium devices (landscape tablets, 768px and up) */
     text-align: justify;
     padding: 5vw;
     font-size: 2em;
+  }
+
+  .spicerack {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60vh 60vh 60vh 80vh 60vh;  
+    row-gap: 3em;
+    }
+    
+  .jar {
+    padding-left: 0%;
+    display: grid;
+    grid-template-rows: 8% 84%;
+    grid-template-columns: 100%;
+    row-gap: 6%;
+  }
+  
+  .cap {
+    border-top: none;
+    border-bottom: var(--green) 5px dotted;
+    padding-top: 0;
+    padding-bottom: 5%;
+    font-size: 2em;
+    text-align: left;
+  }
+  
+  .label {
+    display: grid;
+    place-content: start start;
+    grid-gap: 2%;
+  }
+
+  .thyme, .tumeric, .ginger, .cinnamon, .pepper {
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 50% 50%;
+  } 
+
+  .rosemary{
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 50% 50%;
+    place-content: start start;
   }
 }
 
