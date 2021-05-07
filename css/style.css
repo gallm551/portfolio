@@ -142,6 +142,11 @@ place-content: start space-between;
 row-gap: 2.5em;
 }
 
+.nutmeg{
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 30vh;
+  }
+
 .thyme{
 grid-template-columns: 30% 30% 30%;
 grid-template-rows: 30vh;
@@ -351,7 +356,12 @@ Small devices (portrait tablets and large phones, 625px and up)*/
     row-gap: 2%;
   }
 
-  .thyme, .tumeric{
+  .nutmeg{
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+  }
+
+  .thyme, .tumeric,{
     grid-template-columns: 100%;
     grid-template-rows: 30% 30% 30%;
   }
@@ -455,7 +465,7 @@ Medium devices (landscape tablets, 768px and up) */
     grid-gap: 2%;
   }
 
-  .thyme, .tumeric, .ginger, .cinnamon, .pepper {
+  .thyme, .tumeric, .ginger, .cinnamon, .pepper, .nutmeg{
     grid-template-columns: 49% 49%;
     grid-template-rows: 50% 50%;
   } 
